@@ -127,7 +127,7 @@ body {
 
 .btn-submit {
   padding: 10px 32px;
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -137,12 +137,12 @@ body {
 
 .btn-submit:hover,
 .btn-submit:focus {
-  background: var(--second-accent-color);
+  background-color: var(--second-accent-color);
 }
 
 .btn-filter {
   padding: 6px 22px;
-  background: var(--bg-gray-color);
+  background-color: var(--bg-gray-color);
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -151,7 +151,7 @@ body {
 .btn-filter:hover,
 .btn-filter:focus {
   color: var(--txt-dark-bg-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -185,7 +185,17 @@ body {
 }
 
 .contact-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link .icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .nav-list .link {
@@ -198,7 +208,7 @@ body {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: var(--bg-dark-color);
+  background-color: var(--bg-dark-color);
 }
 
 .address-item:not(:last-child) {
@@ -228,7 +238,7 @@ body {
   text-align: center;
 }
 
-.pros-title {
+.features-title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -237,9 +247,15 @@ body {
 }
 
 .page-hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: var(--bg-dark-color);
+  background-color: var(--bg-dark-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-container {
@@ -270,17 +286,28 @@ body {
   --grid-item: 3;
 }
 
-.pros-section {
+.features-section {
   padding-bottom: 0px;
 }
 
+.features-icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .team-section {
-  background: var(--bg-gray-color);
+  background-color: var(--bg-gray-color);
 }
 
 .team-item {
   width: 270px;
-  background: var(--bg-main-color);
+  background-color: var(--bg-main-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -316,7 +343,7 @@ body {
 
 .portfolio-desc {
   padding: 20px 24px;
-  background: var(--bg-main-color);
+  background-color: var(--bg-main-color);
   border: 1px solid var(--border-color);
   border-top: 0;
   font-size: 16px;
