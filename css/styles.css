@@ -313,7 +313,7 @@ body {
   --grid-item: 3;
 }
 
-.client-item {
+.clients-item {
   --grid-item: 6;
 }
 
@@ -403,31 +403,31 @@ body {
   fill: var(--txt-dark-bg-color);
 }
 
-.client-item {
+.clients-item {
   height: 90px;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
-.client-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.client-link .icon {
+.clients-link .icon {
   fill: var(--icon-color);
 }
 
-.client-item:hover,
-.client-item:focus {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-color);
 }
 
-.client-item:hover .icon,
-.client-item:focus .icon {
+.clients-link:hover .icon,
+.clients-link:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -445,14 +445,20 @@ body {
   width: 370px;
 }
 
+.portfolio-link {
+  width: 100%;
+  height: 100%;
+}
+
 .portfolio-desc {
   padding: 20px 24px;
   background-color: var(--bg-main-color);
   border: 1px solid var(--border-color);
-  border-top: 0;
+  border-top: none;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: var(--txt-main-color);
 }
 
 .portfolio-title {
@@ -460,6 +466,11 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* переопределение цветов */
@@ -478,13 +489,4 @@ body {
 .link:focus,
 .link.current {
   color: var(--accent-color);
-}
-
-.portfolio-item .link {
-  color: inherit;
-}
-
-.portfolio-item:hover,
-.portfolio-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
